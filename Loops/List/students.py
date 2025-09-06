@@ -1,4 +1,6 @@
 ####################################
+# A List in python is a collection which is ordered and changeable. Allows duplicate members.
+# 
 # List of students
 # Iterate through the list of students and print a greeting for each student
 ####################################
