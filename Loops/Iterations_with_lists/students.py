@@ -1,3 +1,8 @@
+####################################
+# List of students
+# Iterate through the list of students and print a greeting for each student
+####################################
+
 
 
 students = ["Harry Potter", "Hermione Granger", "Ron Weasley", "Draco Malfoy"]
@@ -14,9 +19,13 @@ for _ in students:
     # print("You are a student at Hogwarts School of Witchcraft and Wizardry.\n")
 
 
+for i in range(len(students)):
+    # print(students[i]) # print name
+    # print( i, students[i]) # print index and name
+    print( i+1, students[i]) # print index+1 and name
 
 # Redundant code below, not needed for the exercise
 #
 # length = len(students)
-# print(length)   
+# print(length)
 ###############################
