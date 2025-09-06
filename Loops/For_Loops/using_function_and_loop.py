@@ -21,7 +21,8 @@ def get_number():
 def call(n):
 
     for _ in range(n):
-        print("Valid input", _+1)
+        print("Valid input", _+1) # _+1 to start count from 1 instead of 0
+        print("Input value is:", _) # print the input value from 0 to n-1
 
 
 def main():

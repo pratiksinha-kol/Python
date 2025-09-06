@@ -19,6 +19,11 @@ for _ in students:
     # print("You are a student at Hogwarts School of Witchcraft and Wizardry.\n")
 
 
+# Range function uses index to iterate through the list
+# Since, list does not have index, we will use len() function to get the length of the list
+# and use it in range() function to iterate through the list using index 
+# In line 10, we are getting length of the list using len() function
+
 for i in range(len(students)):
     # print(students[i]) # print name
     # print( i, students[i]) # print index and name
