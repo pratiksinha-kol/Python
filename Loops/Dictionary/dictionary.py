@@ -21,12 +21,16 @@ player_dict_manual = {
     "Paolo Maldini": "AC Milan",
     "Diego Maradona": "Napoli"
 }
-print(f"The manual dictionary is as follows: {player_dict_manual}")
+print(f"The manual dictionary is as follows: {player_dict_manual}\n")
 print(player_dict_manual["Paolo Maldini"]) # Accessing value using key
 
 # Using loop to get values from dictionary
 for player in player_dict_manual:
-    print(player)
+    # print(player) # This will print all the keys in the dictionary
+    # print(player_dict_manual[player]) # This will print all the values in the dictionary
+    print (player, player_dict_manual[player], sep=", ") # This will print both key and value
+
+
 
 first_name = ["Pratik", "Atindra", "Rohit", "Sourav", "Virat"]
 last_name = ["Sinha", "Sarkar", "Sharma", "Ganguly", "Kohli", "Dhoni"]
@@ -37,5 +41,5 @@ last_name = ["Sinha", "Sarkar", "Sharma", "Ganguly", "Kohli", "Dhoni"]
 # Here, first_name list will be the keys and last_name list will be the values
 # If the lists are of unequal length, zip() will stop creating pairs when the shortest list is exhausted.
 # In this case, last_name list has 6 elements while first_name list has 5 elements
-student_dict_zip = dict(zip(first_name, last_name))
-print(f"The dictionary created using zip function WITH UNEQUAL LENGTH: {student_dict_zip}")
+fullname_dict_zip = dict(zip(first_name, last_name))
+print(f"The dictionary created using zip function WITH UNEQUAL LENGTH: {fullname_dict_zip}")
