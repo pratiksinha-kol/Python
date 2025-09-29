@@ -18,6 +18,8 @@ def is_valid(s):
         return False
     if not s[0:2].isalpha():
         return False
+    if not s.isalnum():  # Rejects any punctuation or spaces
+        return False
     number_started = False
     for i in range(len(s)):
         if s[i].isdigit():
@@ -27,6 +29,8 @@ def is_valid(s):
         elif number_started and s[i].isalpha():
             return False
     return True
+
+
 
 
 main()
