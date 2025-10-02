@@ -47,6 +47,8 @@ while True:
     except (ValueError, IndexError):
         try:
             month_str, day, year = date.split(" ")
+            if not day.endswith(","):
+                raise ValueError
             month_str = month_str.capitalize()
             day = int(day.rstrip(","))
             year = int(year)
