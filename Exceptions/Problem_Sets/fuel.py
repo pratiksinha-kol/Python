@@ -10,7 +10,13 @@ def fraction(prompt):
     numerator, denominator = prompt.split("/")
     numerator = int(numerator)
     denominator = int(denominator)
-    return (numerator / denominator)*100
+    if numerator < 0 or denominator <= 0:
+        raise ValueError
+    percentage = (numerator / denominator)*100
+    if percentage < 0 or percentage > 100:
+        raise ValueError
+    return percentage
+    
 
 
 def main():
@@ -18,7 +24,12 @@ def main():
         try:
             x = input("Fraction: ")
             fractions = round(fraction(x))
-            print(f"{fractions}%")
+            if fractions >= 99:
+                print("F")
+            elif fractions <= 1:
+                print("E") 
+            else:
+                print(f"{fractions}%")
             break
         except (ValueError, TypeError, ZeroDivisionError):
             pass
