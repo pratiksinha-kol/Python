@@ -8,6 +8,10 @@ while True:
     except EOFError:
         break
 
+# Sort the dictionary by keys (item names)
+# Create a new dictionary with sorted keys
+# This ensures the original dictionary remains unchanged
+# Here 'k' is the key (item name) and 'grocery_list[k]' is the value (count)
 sorted_dict = {k: grocery_list[k] for k in sorted(grocery_list)}
 
 for item, count in sorted_dict.items():
