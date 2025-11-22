@@ -1,5 +1,6 @@
 # Install the requests package before running this code:
 # pip install requests
+# Request package is used to make HTTP/HTTPS requests in Python
 # Import json package to handle JSON data
 
 import requests
