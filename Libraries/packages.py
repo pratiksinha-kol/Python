@@ -19,7 +19,8 @@ import sys
 # python Libraries/packages.py YourName
 if len(sys.argv) == 2:
     cowsay.cow("Hello, " + sys.argv[1])
-
+elif len(sys.argv) < 2:
+    sys.exit("Too few arguments")
 
 # To execute this program from command line with multiple arguments, use the following command:
 # python Libraries/packages.py Name1 Name2 Name3
