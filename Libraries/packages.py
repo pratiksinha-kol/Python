@@ -21,8 +21,19 @@ if len(sys.argv) == 2:
     cowsay.cow("Hello, " + sys.argv[1])
 elif len(sys.argv) < 2:
     sys.exit("Too few arguments")
+# elif len(sys.argv) > 2:
+#     sys.exit("Too many arguments")    
 
 # To execute this program from command line with multiple arguments, use the following command:
 # python Libraries/packages.py Name1 Name2 Name3
 for i in sys.argv[1:]:
     cowsay.cow("Welcome, " + i)
+
+# Using trex package to print a T-Rex dinosaur saying something
+
+if len(sys.argv) == 2:
+    cowsay.trex("Trex welcomes you, " + sys.argv[1])    
+
+
+for i in sys.argv[1:]:
+    cowsay.tux("Linux Tux welcomes you, " + i)    
