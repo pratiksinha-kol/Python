@@ -1,3 +1,6 @@
+# Libraries/average.py
+# Using the statistics module to calculate mean, median, and mode
+
 import statistics
 
 print(f"The mean value is {statistics.mean([100,90,95])}")
