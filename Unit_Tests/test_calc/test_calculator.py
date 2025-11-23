@@ -3,6 +3,9 @@
 # Assertions provide a clear and concise way to validate expected outcomes.
 # The keyword 'assert' checks if a condition is true, and raises an AssertionError if not.
 
+# We will use pytest to run these tests, which will automatically handle assertion errors.
+# Referring to refined_test_calculator.py for a cleaner version using only assertions.
+
 from calculator import square
 
 # Using if statements for testing (commented out)
