@@ -17,6 +17,7 @@
 #--- We will further improve the above code ---#
 #--- by combining reading, sorting, and greeting in fewer lines ---#    
 
+#--- Sorting in ascending order ---#
 with open("stored_names.txt") as file:
     for n in sorted(file):
         print(f"Hi, {n.strip()}" )
