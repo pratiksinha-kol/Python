@@ -34,3 +34,7 @@ print("\nImproved reading content of 'stored_names.txt' without using loop:\n")
 with open("stored_names.txt","r") as file:
     for text in file:
         print(text.strip())
+        print(text.rstrip())
+
+# The rstrip() method is used to remove any trailing whitespace characters, including newlines, from the end of each line before printing.
+# strip() removes both leading and trailing whitespace characters.        
