@@ -37,7 +37,15 @@ email = input("Please enter your email address: ").strip()
 #     print("Invalid email address.")    
 
 # 'r' before the string indicates a raw string, which treats backslashes as literal characters
-if re.search(r"^[^@]+@[^@]+\.com$", email):
+# if re.search(r"^[^@]+@[^@]+\.com$", email):
+#     print("Valid email address.")
+# else:
+#     print("Invalid email address.")
+
+# Improved regex to allow only alphanumeric characters and underscores before and after '@'
+# '+@' ensures at least one character on both sides of '@'
+# You can replace [a-zA-Z0-9_] with '\w' for the same effect
+if re.search(r"^\w+@[a-zA-Z0-9_]+\.com$", email):
     print("Valid email address.")
 else:
-    print("Invalid email address.")
+    print("Invalid email address.")    
