@@ -14,6 +14,7 @@
 
 ## Character Sets & Quantifiers
 - **`[]`** → a set of characters  
+- **`[^]`** → matches any one character _not_ inside the brackets 
 - **`{}`** → exact number of occurrences of the preceding element  
 - **`{m}`** → exactly *m* occurrences of the preceding element  
 - **`{m,n}`** → from *m* to *n* occurrences of the preceding element  
