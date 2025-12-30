@@ -19,7 +19,9 @@
 - **`{m}`** → exactly *m* occurrences of the preceding element  
 - **`{m,n}`** → from *m* to *n* occurrences of the preceding element  
 - **`|`** → either or  
-- **`() `** → grouping  
+- **`()`** → grouping (capturing group; stores the match for later reference)
+- **`A|B`** → matches either **'A'** or **'B'**
+- **`(?:)`** → non‑capturing group (groups without storing the match)
 
 ---
 
